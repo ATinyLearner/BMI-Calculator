@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './constants.dart';
 
 class CardStyle extends StatelessWidget {
   const CardStyle({this.gender, this.iconName});
@@ -19,10 +20,7 @@ class CardStyle extends StatelessWidget {
         ),
         Text(
           gender,
-          style: TextStyle(
-            fontSize: 18,
-            color: Color(0XFF8D8E98),
-          ),
+          style: kLabelTextStyle,
         )
       ],
     );
